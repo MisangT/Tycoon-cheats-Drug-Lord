@@ -1,0 +1,61 @@
+﻿body {
+}
+
+.Grid td
+        {
+            
+            color: black;
+            font-size: 10pt;
+            line-height:200%
+        }
+        .Grid th
+        {
+            background-color: rgb(90,126,146);
+            color: White;
+            font-size: 12pt;
+            line-height:200%
+        }
+        .ChildGrid td
+        {
+            
+            color: black;
+            font-size: 10pt;
+            line-height:200%;
+            white-space:nowrap;
+        }
+        .ChildGrid th
+        {
+            background-color: #6C6C6C !important;
+            color: White;
+            font-size: 10pt;
+            line-height:200%
+        }
+
+
+.buttons {
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold !important;
+    background-color: rgb(68,118,179) !important;
+    cursor: pointer !important;
+}
+
+.MainHeadingLegend {
+    background-color: #5A7E92;
+    font-family: Calibri;
+    font-size: 10pt;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    padding: 2px 6px;
+    width: 100%;
+}
+
+.info {
+    background-color: rgb(208,138,78);
+    border-color: #3b8eb5;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 16pt;
+    font-weight: bold;
+}

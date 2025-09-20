@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="isdaform" List="113" Url="_catalogs/wp">
+    <File Path="isdaform\isdaform.webpart" Url="FIC.LD.TrainingEvaluation.SP.Solution_isdaform.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="LD WebParts" />
+    </File>
+  </Module>
+</Elements>

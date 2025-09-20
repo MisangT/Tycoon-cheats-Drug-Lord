@@ -1,0 +1,234 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75D2438D-388E-4163-96BA-DC8D87A252DA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FIC.LD.TrainingEvaluation.SP.Solution</RootNamespace>
+    <AssemblyName>FIC.LD.TrainingEvaluation.SP.Solution</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.0</MinimumOfficeToolsVersion>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admindashboard\admindashboard.cs" />
+    <Compile Include="admindashboard\admindashboardUserControl.ascx.cs">
+      <DependentUpon>admindashboardUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admindashboard\admindashboardUserControl.ascx.designer.cs">
+      <DependentUpon>admindashboardUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apeform\apeform.cs" />
+    <Compile Include="apeform\apeformUserControl.ascx.cs">
+      <DependentUpon>apeformUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="apeform\apeformUserControl.ascx.designer.cs">
+      <DependentUpon>apeformUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard\dashboard.cs" />
+    <Compile Include="dashboard\dashboardUserControl.ascx.cs">
+      <DependentUpon>dashboardUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard\dashboardUserControl.ascx.designer.cs">
+      <DependentUpon>dashboardUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="isdaform\isdaform.cs" />
+    <Compile Include="isdaform\isdaformUserControl.ascx.cs">
+      <DependentUpon>isdaformUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="isdaform\isdaformUserControl.ascx.designer.cs">
+      <DependentUpon>isdaformUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerboard\managerboard.cs" />
+    <Compile Include="managerboard\managerboardUserControl.ascx.cs">
+      <DependentUpon>managerboardUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerboard\managerboardUserControl.ascx.designer.cs">
+      <DependentUpon>managerboardUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="plap\plap.cs" />
+    <Compile Include="plap\plapUserControl.ascx.cs">
+      <DependentUpon>plapUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="plap\plapUserControl.ascx.designer.cs">
+      <DependentUpon>plapUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="plie_form\plie_form.cs" />
+    <Compile Include="plie_form\plie_formUserControl.ascx.cs">
+      <DependentUpon>plie_formUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="plie_form\plie_formUserControl.ascx.designer.cs">
+      <DependentUpon>plie_formUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="admindashboard\admindashboard.webpart" />
+    <None Include="admindashboard\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a62c7a78-5b28-4e4b-94e2-9081f27bcfa3}</SharePointProjectItemId>
+    </None>
+    <None Include="apeform\apeform.webpart" />
+    <None Include="apeform\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{afd5811b-3e8f-4a14-bc7b-6b257b43427c}</SharePointProjectItemId>
+    </None>
+    <None Include="dashboard\dashboard.webpart" />
+    <None Include="dashboard\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cf4a126f-2004-45a3-993a-cd0f80033075}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{f7dd4f7e-b1c8-435c-abaf-716b30855344}</FeatureId>
+    </None>
+    <None Include="isdaform\isdaform.webpart" />
+    <None Include="isdaform\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{13975abc-301b-4f63-9c3b-a41d5c558f55}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7c269625-bbc6-49f0-8045-54240be088fe}</SharePointProjectItemId>
+    </None>
+    <None Include="managerboard\managerboard.webpart" />
+    <None Include="managerboard\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{95d5d0a2-c68b-48f0-bb71-6fb2e4daee1f}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{54dddb03-7e31-4235-be42-38bf24bd453f}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="plap\plap.webpart" />
+    <None Include="plap\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3515b305-4ded-44cd-970c-cc7741b33e68}</SharePointProjectItemId>
+    </None>
+    <None Include="plie_form\plie_form.webpart" />
+    <None Include="plie_form\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b1d5088c-8c39-4ea1-a2da-d745147f49ce}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admindashboard\admindashboardUserControl.ascx" />
+    <Content Include="admindashboard\Elements.xml" />
+    <Content Include="apeform\apeformUserControl.ascx" />
+    <Content Include="apeform\Elements.xml" />
+    <Content Include="dashboard\dashboardUserControl.ascx" />
+    <Content Include="dashboard\Elements.xml" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="isdaform\Elements.xml" />
+    <Content Include="isdaform\isdaformUserControl.ascx" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\css\admindashboard.css" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\css\bootstrap.min.css" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\css\datepicker.css" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\css\employeedashboard.css" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\css\formControls.css" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\css\GridV.css" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\css\jquery-ui.css" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\css\main.css" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\css\managerdashboard.css" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\APEEmailFromEmployeeToLDTeam.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\APENotificeFromManagerToEmployee.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\EmployeeToLDWorkbackContractAttached.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\EmployeeToManager.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\EmployeeToManagerplap.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\EscalationPopUp.aspx" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\EscalationPopUp.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\LDAdminApproved.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\LDAdminRejected.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\LDAdminToManager.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\LDManagerApproved.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\LDManagerRejected.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\LDWorkbackContractToEmployee.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\ManagerApproved.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\ManagerApprovedplap.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\ManagerRejected.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\ManagerRejectedplap.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\PLIECompleteEmployeeToLD.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\emailtemplates\PLIEEscalationToManager.html" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\images\minus.png" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\images\plus.png" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\scripts\admindashboard.js" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\scripts\bootstrap-datepicker.js" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\scripts\bootstrap.min.js" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\scripts\employeedashboard.js" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\scripts\GridV.js" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\scripts\jquery-1.12.4.min.js" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\scripts\jquery-1.8.3.min.js" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\scripts\jquery-3.2.1.js" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\scripts\jquery-ui.js" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\scripts\main.js" />
+    <Content Include="Layouts\FIC.LD.TrainingEvaluation.SP.Solution\scripts\managerdashboard.js" />
+    <Content Include="managerboard\Elements.xml" />
+    <Content Include="managerboard\managerboardUserControl.ascx" />
+    <Content Include="plap\Elements.xml" />
+    <Content Include="plap\plapUserControl.ascx" />
+    <Content Include="plie_form\Elements.xml" />
+    <Content Include="plie_form\plie_formUserControl.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FIC.LD.TrainingEvaluation.SP.Solution.Helper\FIC.LD.TrainingEvaluation.SP.Solution.Helper.csproj">
+      <Project>{5282129a-742b-4eda-8695-e08764dc45f9}</Project>
+      <Name>FIC.LD.TrainingEvaluation.SP.Solution.Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
