@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="54dddb03-7e31-4235-be42-38bf24bd453f" solutionId="54dddb03-7e31-4235-be42-38bf24bd453f" resetWebServer="true" sharePointProductVersion="16.0" name="FIC.LD.TrainingEvaluation" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="Dapper.StrongName.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\..\dapperdlls\Dapper.StrongName.dll" />
+    <projectOutputAssembly location="FIC.LD.TrainingEvaluation.SP.Solution.Helper.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\FIC.LD.TrainingEvaluation.SP.Solution.Helper\FIC.LD.TrainingEvaluation.SP.Solution.Helper.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="f7dd4f7e-b1c8-435c-abaf-716b30855344" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="7c269625-bbc6-49f0-8045-54240be088fe" />
+  </projectItems>
+</package>

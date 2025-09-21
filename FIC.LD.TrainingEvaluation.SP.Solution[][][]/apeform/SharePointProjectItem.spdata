@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="apeformUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="apeform\" Type="ElementManifest" />
+    <ProjectItemFile Source="apeform.webpart" Target="apeform\" Type="ElementFile" />
+    <ProjectItemFile Source="apeformUserControl.ascx" Target="CONTROLTEMPLATES\FIC.LD.TrainingEvaluation.SP.Solution\apeform\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="FIC.LD.TrainingEvaluation.SP.Solution.apeform" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

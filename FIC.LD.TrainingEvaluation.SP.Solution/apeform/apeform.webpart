@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="FIC.LD.TrainingEvaluation.SP.Solution.apeform.apeform, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">FIC.LD.TrainingEvaluation.SP.Solution - apeform</property>
+        <property name="Description" type="string">FIC.LD.TrainingEvaluation.SP.Solution - admindashboard</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

@@ -1,0 +1,125 @@
+﻿body {
+}
+
+.inputTextBox {
+    width: 402px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.inputLabel {
+    width: 402px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.GeneralFormat {
+    font-family: Calibri;
+}
+
+.ContentsDIVFormat {
+    background-color: #F2F2F2;
+}
+
+fieldset legend {
+    text-align: left;
+}
+
+.FieldSetFormat {
+    background-color: #F2F2F2;
+    font-family: Calibri;
+    font-size: small;
+    font-weight: bold;
+    color: black;
+    border: 1px solid blue;
+    border-color: #5A7E92;
+    padding: 10px;
+}
+
+.MainHeadingLegend {
+    background-color: #5A7E92;
+    font-family: Calibri;
+    font-size: 10pt;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    padding: 2px 6px;
+    width:100%;
+}
+
+.SubHeadingLegend {
+    font-family: Calibri;
+    font-size: 10pt;
+    font-weight: bold;
+    color: black;
+    white-space: nowrap;
+    padding: 2px 6px;
+    width: 100%;
+}
+
+.AlignCenter {
+    text-align: center;
+}
+
+.TextAreaFormat {
+    width: 901px;
+    height: 113px;
+}
+
+.info {
+    background-color: rgb(208,138,78);
+    border-color: #3b8eb5;
+    padding: 50px;
+    text-align: center;
+    color:#fff;
+    font-size: 16pt;
+}
+
+.ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle {
+    background: red;
+    color: #F2F2F2;
+}
+
+.SetStatusColorRed {
+    background-color:red;
+    color:#F2F2F2;
+    font-weight:bold;
+}
+
+.SetStatusColorGreen {
+    background-color:darkseagreen;
+    color:#F2F2F2;
+    font-weight:bold;
+}
+
+.TrainingTypeGroup {
+    color: #fff;
+    padding: 20px;
+    display: none;
+    margin-top: 20px;
+}
+
+#ViewIntervention {
+    border-radius: 25px;
+    border: 2px solid #969696;
+    padding: 10px;
+    width: 200px;
+    height: 10px;
+}
+
+
+.Grid, .ChildGrid {
+    border: 1px solid #ccc;
+}
+
+
+.PlusMinusImageWith {
+    width: 2px;
+}
+
+.buttons {
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold !important;
+    background-color: rgb(68,118,179) !important;
+    cursor: pointer !important;
+}

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src=”http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js”></script>
+    <script type="text/javascript">
+    function SetName() {
+        if (window.opener != null && !window.opener.closed) {
+            var txtName = window.opener.document.getElementById("txtName");
+            txtName.value = document.getElementById("ddlNames").value;
+        }
+        window.close();
+    }
+    </script>
+
+    <script type="text/javascript">
+    function SetAndPassReason() {
+        if (window.opener != null && !window.opener.closed) {
+            var txtReason = window.opener.document.getElementById("txtReason").value;
+             txtReason.value = $("#txtReason").val();
+           // txtReason.value = document.getElementById("txtReason").value;
+        }
+        window.close();
+    }
+    </script>
+
+</head>
+<body>
+    
+        <!--<table>
+            <tr>
+                <td style="vertical-align: top" width="40%">
+                    Escalation Reason
+                </td>
+                <td width="60%">
+                    <asp:TextBox ID="EscalationReasonTextbox" CssClass="TextAreaFormat" TextMode="MultiLine"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;<asp:Button ID="Button1" Text="Button" OnClick="btnEscalate_Click" />
+                </td>
+            </tr>
+        </table>-->
+
+
+    <textarea name="txtReason" ID="txtReason" cols="40" rows="5"></textarea>
+    <input type="button" value="Set Reason" onclick="SetAndPassReason();" />
+   
+    <select name="ddlNames" id="ddlNames">
+        <option value="Mudassar Khan">Mudassar Khan</option>
+        <option value="John Hammond">John Hammond</option>
+        <option value="Mike Stanley">Mike Stanley</option>
+    </select>
+    <br />
+    <br />
+    <input type="button" value="Select" onclick="SetName();" />
+</body>
+</html>

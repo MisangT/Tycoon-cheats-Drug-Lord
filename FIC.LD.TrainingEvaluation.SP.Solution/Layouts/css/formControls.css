@@ -1,0 +1,257 @@
+﻿.GeneralFormat {
+        text-align: center;
+        font-family: Calibri;
+    }
+
+
+.TopSectionLegendFormat {
+        text-align: left;
+        background-color: #5A7E92;
+        font-family: Calibri;
+        font-size: 35;
+        font-weight: bold;
+        color: white;
+    }
+
+    .TopTitleFormat {
+        text-align: left;
+        background-color: #5A7E92;
+        font-family: Calibri;
+        font-size: 40;
+        font-weight: 700;
+        color: white;
+    }
+
+    .TopSectionHeader {
+            width: 403px;
+            height: 25px;
+            text-align: left;
+        }
+
+    .TwoLayerLegendFormat {
+        text-align: left;
+        background-color: #F2F2F2;
+        font-family: Calibri;
+        font-size: small;
+        font-weight: 700;
+        font-size: 35;
+        font-weight: bold;
+        color: black;
+        border: 1px solid blue;
+        border-color: #5A7E92;
+        padding: 0.1em 0.5em;
+    }
+
+       .TopOrangeTextFormat {
+        text-align: left;      
+        font-family: Calibri;
+        font-size: 35;
+        font-weight: 700;
+        color: #D08A4E;     
+    }
+    .ContentsDIVFormat {
+        background-color: #F2F2F2;
+    }
+
+    .SectionFormat {
+        text-align: left;
+        background-color: #5A7E92;
+        font-family: Calibri;
+        font-size: 35;
+        font-weight: bold;
+        color: white;
+    }
+
+    .SectionContentsFormat {
+        text-align: left;
+        background-color: #F2F2F2;
+        font-family: Calibri;
+        font-size: small;
+        font-weight: 700;
+        color: black;
+        white-space: normal;
+        margin-left: -7px;
+    }
+
+    .DisclaimerTextFormat {
+        text-align: left;
+        background-color: #F2F2F2;
+        font-family: Calibri;
+        font-size: small;
+        font-weight: 500;
+        color: black;
+    }
+
+    .wordwrap {
+        white-space: pre-wrap; /* CSS3 */
+        white-space: -moz-pre-wrap; /* Firefox */
+        white-space: -o-pre-wrap; /* Opera 7 */
+        word-wrap: break-word; /* IE */
+    }
+
+    .SecondTitleFormat {
+        text-align: left;
+        font-size: small;
+        font-weight: 700;
+        color: black;
+        background-color: #F2F2F2;
+    }
+
+    .SectionFirstTitleFormat {
+        color: white;
+        font-size: larger;
+        font-weight: 700;
+    }
+
+    .SectionSecondTitleFormat {
+        color: #5A7E92;
+        font-size: larger;
+        font-weight: 700;
+    }
+
+    .BoldOrangeText {
+        color: #D08A4E;
+        font-size: large;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .NormalOrangeText {
+        text-align: left;
+        color: #D08A4E;
+        font-size: small;
+        font-weight: normal;
+    }
+
+    .FormTitleFormat1 {
+        width: 1429px;
+        height: 366px;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+    }
+
+    .FormTitleFormat {
+        height: 61px;
+    }
+
+    .SectionTitleFormats {
+        height: 30px;
+        background-color: #00ff00;
+    }
+
+    .SectionTwoLeftAlign {
+        text-align: left;
+    }
+
+    .BlackLabelsBold {
+        text-align: left;
+        font-size: small;
+        font-weight: 700;
+        background-color: #F2F2F2;
+    }
+
+    .LongTextFormat {
+        text-align: left;
+        font-family: Calibri;
+        font-size: small;
+        font-weight: 500;
+        background-color: #F2F2F2;
+    }
+
+    .TextBoxWidth {
+        width: 545px;
+    }
+
+    .MultiLineTextBoxWAH {
+        width: 1000px;
+        height: 113px;
+    }
+
+    .DatesPickerAlign {
+        text-align: center;
+    }
+
+    .DateLegendFormat {
+        text-align: left;
+        background-color: #F2F2F2;
+        font-family: Calibri;
+        font-size: small;
+        font-weight: 700;
+        font-size: 35;
+        font-weight: bold;
+        color: black;
+        border: 1px solid blue;
+        border-color: #5A7E92;
+        padding: 0.2em 0.5em;
+    }
+
+    .FieldSetFormat {
+        text-align: center;
+        background-color: #F2F2F2;
+        font-family: Calibri;
+        font-size: small;
+        font-weight: 700;
+        font-size: 35;
+        font-weight: bold;
+        color: black;
+        border: 1px solid blue;
+        border-color: #5A7E92;
+        padding: 0.2em 0.5em;
+    }
+
+    .TopSectionFieldsetFormat {
+        text-align: center;
+        background-color: #F2F2F2;
+        font-family: Calibri;
+        font-size: small;
+        font-weight: 700;
+        font-size: 35;
+        font-weight: bold;
+        color: black;
+        border: 1px solid blue;
+        border-color: #5A7E92;
+        padding: 0.1em 0.5em;
+    }
+
+    .TwoLayerLegendFormat {
+        text-align: left;
+        background-color: #F2F2F2;
+        font-family: Calibri;
+        font-size: small;
+        font-weight: 700;
+        font-size: 35;
+        font-weight: bold;
+        color: black;
+        border: 1px solid blue;
+        border-color: #5A7E92;
+        padding: 0.1em 0.5em;
+    }
+
+    .ChildLegendFormat {
+        text-align: left;
+        background-color: #F2F2F2;
+        font-size: small;
+        font-weight: bold;
+        color: black;
+        border: 1px solid blue;
+        border-color: #5A7E92;
+        padding: 0.2em 0.9em;
+    }
+
+    .nested-parent legend:first-child {
+        text-align: left;
+        background-color: #F2F2F2;
+        font-family: Calibri;
+        font-size: small;
+        font-weight: 700;
+        color: black;
+        border: 1px solid blue;
+        border-color: #5A7E92;
+        color: #f00;
+    }
+
+    .TextAreaFormat {
+        width: 901px;
+        height: 113px;
+    }

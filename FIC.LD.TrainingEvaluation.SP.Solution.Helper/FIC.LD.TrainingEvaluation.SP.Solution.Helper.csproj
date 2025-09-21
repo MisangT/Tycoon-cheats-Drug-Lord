@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5282129A-742B-4EDA-8695-E08764DC45F9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FIC.LD.TrainingEvaluation.SP.Solution.Helper</RootNamespace>
+    <AssemblyName>FIC.LD.TrainingEvaluation.SP.Solution.Helper</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper.StrongName, Version=1.50.2.0, Culture=neutral, PublicKeyToken=e3e8412083d25dd3, processorArchitecture=MSIL">
+      <HintPath>..\..\dapperdlls\Dapper.StrongName.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\Common Files\microsoft shared\Web Server Extensions\16\ISAPI\Microsoft.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionPlanEvaluationDataAccess.cs" />
+    <Compile Include="ActionPlanEvaluationObjects\EmployeeActionPlanEvaluation.cs" />
+    <Compile Include="ActionPlanEvaluationObjects\EmployeeActionPlanEvaluationObject.cs" />
+    <Compile Include="ActionPlanEvaluationObjects\ManagerActionPlanEvaluationObject.cs" />
+    <Compile Include="ActiveDirectoryDataAccess.cs" />
+    <Compile Include="ActiveDirectoryObjects\ActiveDirectoryEmployeeObject.cs" />
+    <Compile Include="Configs.cs" />
+    <Compile Include="Email.cs" />
+    <Compile Include="EmailObjects\EmailObject.cs" />
+    <Compile Include="EmployeeInterventionsDataAccess.cs" />
+    <Compile Include="Encryption.cs" />
+    <Compile Include="InterventionEscalationObjects\InterventionEscalationObject.cs" />
+    <Compile Include="InterventionFeedbackObjects\InterventionsFeedbackObject.cs" />
+    <Compile Include="InterventionsFeedbackDataAccess.cs" />
+    <Compile Include="LearningInterventionObjects\AdminEmployeesInterventionsObject.cs" />
+    <Compile Include="LearningInterventionObjects\EmployeeDetailsObject.cs" />
+    <Compile Include="LearningInterventionObjects\EmployeeInterventionsObject.cs" />
+    <Compile Include="LearningInterventionObjects\EmployeeObject.cs" />
+    <Compile Include="LearningInterventionObjects\FormStatusObjects.cs" />
+    <Compile Include="LearningInterventionObjects\IndividualSkillsDevelopmentApprovalCompletedObjects.cs" />
+    <Compile Include="LearningInterventionObjects\LDAdminEmployeeInterventionsObject.cs" />
+    <Compile Include="LearningInterventionObjects\LDEmployeeInterventionsApprovalObject.cs" />
+    <Compile Include="LearningInterventionObjects\LDInterventionsAdminObjects.cs" />
+    <Compile Include="LearningInterventionObjects\ManagerEmployeeInterventionsApprovalObject.cs" />
+    <Compile Include="LearningInterventionObjects\ManagerEmployeeInterventionsObject.cs" />
+    <Compile Include="ManagerEvaluationDataAccess.cs" />
+    <Compile Include="ManagerEvaluationObjects\ManagerPostLearningActionPlanEvaluationObject.cs" />
+    <Compile Include="PostLearningActionPlanDataAccess.cs" />
+    <Compile Include="PostLearningActionPlanObjects\EmployeeActionPlansObject.cs" />
+    <Compile Include="PostLearningActionPlanObjects\EmployeePostLearningActionPlanEvaluation.cs" />
+    <Compile Include="PostLearningActionPlanObjects\EmployeePostLearningActionPlanObject.cs" />
+    <Compile Include="PostLearningActionPlanObjects\PostLearningActionPlanCompletedObject.cs" />
+    <Compile Include="PostLearningActionPlanObjects\PostLearningActionPlanObject.cs" />
+    <Compile Include="PostLearningInterventionEvaluationObjects\EmployeePostInterventionEvaluations.cs" />
+    <Compile Include="PostLearningInterventionEvaluationObjects\PostEmployeeInterventionEvaluationCompletedObject.cs" />
+    <Compile Include="PostLearningInterventionEvaluationObjects\PostLearningInterventionEvaluationEmployeeObject.cs" />
+    <Compile Include="PostLearningInterventionsDataAccess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

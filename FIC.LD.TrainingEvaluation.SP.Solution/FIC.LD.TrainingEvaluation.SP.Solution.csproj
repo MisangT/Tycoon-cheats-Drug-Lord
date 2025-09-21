@@ -1,0 +1,253 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52F04242-FE8C-4074-9294-16449E078850}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FIC.LD.TrainingEvaluation.SP.Solution</RootNamespace>
+    <AssemblyName>FIC.LD.TrainingEvaluation.SP.Solution</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44321</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admindashboard\admindashboardUserControl.ascx" />
+    <Content Include="admindashboard\Elements.xml" />
+    <Content Include="apeform\apeformUserControl.ascx" />
+    <Content Include="apeform\Elements.xml" />
+    <Content Include="dashboard\dashboardUserControl.ascx" />
+    <Content Include="dashboard\Elements.xml" />
+    <Content Include="isdaform\Elements.xml" />
+    <Content Include="isdaform\isdaformUserControl.ascx" />
+    <Content Include="Layouts\css\admindashboard.css" />
+    <Content Include="Layouts\css\bootstrap.min.css" />
+    <Content Include="Layouts\css\datepicker.css" />
+    <Content Include="Layouts\css\employeedashboard.css" />
+    <Content Include="Layouts\css\formControls.css" />
+    <Content Include="Layouts\css\GridV.css" />
+    <Content Include="Layouts\css\jquery-ui.css" />
+    <Content Include="Layouts\css\main.css" />
+    <Content Include="Layouts\css\managerdashboard.css" />
+    <Content Include="Layouts\emailtemplates\APEEmailFromEmployeeToLDTeam.html" />
+    <Content Include="Layouts\emailtemplates\APENotificeFromManagerToEmployee.html" />
+    <Content Include="Layouts\emailtemplates\EmployeeToLDWorkbackContractAttached.html" />
+    <Content Include="Layouts\emailtemplates\EmployeeToManager.html" />
+    <Content Include="Layouts\emailtemplates\EmployeeToManagerplap.html" />
+    <Content Include="Layouts\emailtemplates\EscalationPopUp.aspx" />
+    <Content Include="Layouts\emailtemplates\EscalationPopUp.html" />
+    <Content Include="Layouts\emailtemplates\LDAdminApproved.html" />
+    <Content Include="Layouts\emailtemplates\LDAdminRejected.html" />
+    <Content Include="Layouts\emailtemplates\LDAdminToManager.html" />
+    <Content Include="Layouts\emailtemplates\LDManagerApproved.html" />
+    <Content Include="Layouts\emailtemplates\LDManagerRejected.html" />
+    <Content Include="Layouts\emailtemplates\LDWorkbackContractToEmployee.html" />
+    <Content Include="Layouts\emailtemplates\ManagerApproved.html" />
+    <Content Include="Layouts\emailtemplates\ManagerApprovedplap.html" />
+    <Content Include="Layouts\emailtemplates\ManagerRejected.html" />
+    <Content Include="Layouts\emailtemplates\ManagerRejectedplap.html" />
+    <Content Include="Layouts\emailtemplates\PLIECompleteEmployeeToLD.html" />
+    <Content Include="Layouts\emailtemplates\PLIEEscalationToManager.html" />
+    <Content Include="Layouts\images\minus.png" />
+    <Content Include="Layouts\images\plus.png" />
+    <Content Include="Layouts\scripts\admindashboard.js" />
+    <Content Include="Layouts\scripts\bootstrap-datepicker.js" />
+    <Content Include="Layouts\scripts\bootstrap.min.js" />
+    <Content Include="Layouts\scripts\employeedashboard.js" />
+    <Content Include="Layouts\scripts\GridV.js" />
+    <Content Include="Layouts\scripts\jquery-1.12.4.min.js" />
+    <Content Include="Layouts\scripts\jquery-1.8.3.min.js" />
+    <Content Include="Layouts\scripts\jquery-3.2.1.js" />
+    <Content Include="Layouts\scripts\jquery-ui.js" />
+    <Content Include="Layouts\scripts\main.js" />
+    <Content Include="Layouts\scripts\managerdashboard.js" />
+    <Content Include="managerboard\Elements.xml" />
+    <Content Include="managerboard\managerboardUserControl.ascx" />
+    <Content Include="plap\Elements.xml" />
+    <Content Include="plap\plapUserControl.ascx" />
+    <Content Include="plie_form\Elements.xml" />
+    <Content Include="plie_form\plie_formUserControl.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admindashboard\admindashboard.cs" />
+    <Compile Include="admindashboard\admindashboardUserControl.ascx.cs">
+      <DependentUpon>admindashboardUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admindashboard\admindashboardUserControl.ascx.designer.cs">
+      <DependentUpon>admindashboardUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="apeform\apeform.cs" />
+    <Compile Include="apeform\apeformUserControl.ascx.cs">
+      <DependentUpon>apeformUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="apeform\apeformUserControl.ascx.designer.cs">
+      <DependentUpon>apeformUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard\dashboard.cs" />
+    <Compile Include="dashboard\dashboardUserControl.ascx.cs">
+      <DependentUpon>dashboardUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard\dashboardUserControl.ascx.designer.cs">
+      <DependentUpon>dashboardUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="isdaform\isdaform.cs" />
+    <Compile Include="isdaform\isdaformUserControl.ascx.cs">
+      <DependentUpon>isdaformUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="isdaform\isdaformUserControl.ascx.designer.cs">
+      <DependentUpon>isdaformUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="managerboard\managerboard.cs" />
+    <Compile Include="managerboard\managerboardUserControl.ascx.cs">
+      <DependentUpon>managerboardUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerboard\managerboardUserControl.ascx.designer.cs">
+      <DependentUpon>managerboardUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="plap\plap.cs" />
+    <Compile Include="plap\plapUserControl.ascx.cs">
+      <DependentUpon>plapUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="plap\plapUserControl.ascx.designer.cs">
+      <DependentUpon>plapUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="plie_form\plie_form.cs" />
+    <Compile Include="plie_form\plie_formUserControl.ascx.cs">
+      <DependentUpon>plie_formUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="plie_form\plie_formUserControl.ascx.designer.cs">
+      <DependentUpon>plie_formUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admindashboard\admindashboard.webpart" />
+    <Content Include="admindashboard\SharePointProjectItem.spdata" />
+    <Content Include="apeform\apeform.webpart" />
+    <Content Include="apeform\SharePointProjectItem.spdata" />
+    <Content Include="dashboard\dashboard.webpart" />
+    <Content Include="dashboard\SharePointProjectItem.spdata" />
+    <Content Include="isdaform\isdaform.webpart" />
+    <Content Include="isdaform\SharePointProjectItem.spdata" />
+    <Content Include="managerboard\managerboard.webpart" />
+    <Content Include="managerboard\SharePointProjectItem.spdata" />
+    <None Include="packages.config" />
+    <Content Include="plap\plap.webpart" />
+    <Content Include="plap\SharePointProjectItem.spdata" />
+    <Content Include="plie_form\plie_form.webpart" />
+    <Content Include="plie_form\SharePointProjectItem.spdata" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FIC.LD.TrainingEvaluation.SP.Solution.Helper\FIC.LD.TrainingEvaluation.SP.Solution.Helper.csproj">
+      <Project>{5282129A-742B-4EDA-8695-E08764DC45F9}</Project>
+      <Name>FIC.LD.TrainingEvaluation.SP.Solution.Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54781</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44321/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
